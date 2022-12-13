@@ -1,13 +1,10 @@
 import React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import MaterialTable from 'material-table';
-import Icon from '@material-ui/core/Icon';
-import { pink, teal, orange } from "@material-ui/core/colors";
 import GenericTemplate from '../templates/GenericTemplate';
 
-import { Typography, TextField, Button, CssBaseline, Container } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
-import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';

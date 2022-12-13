@@ -288,7 +288,7 @@ const GenericTemplate: React.FC<GenericTemplateProps> = ({
                 <ListItemText primary="作業終了報告" />
               </ListItem>
             </Link>
-            <Link to="/products" className={classes.link}>
+            <Link to="/test1" className={classes.link}>
               <ListItem button>
                 <ListItemText primary="" />
               </ListItem>

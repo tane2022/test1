@@ -1,17 +1,11 @@
 import React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import MaterialTable from 'material-table';
-import Icon from '@material-ui/core/Icon';
-import { pink, teal, orange } from "@material-ui/core/colors";
 import GenericTemplate from '../templates/GenericTemplate';
 
-import { Typography, TextField, Button, CssBaseline, Container } from '@material-ui/core';
+import {Button} from '@material-ui/core';
 
 import SampleImage from "../images/weather_1week.png"
-
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
 
 type Props = {} & RouteComponentProps<{}>;
 
@@ -112,7 +106,7 @@ const ConstInfo: React.FC<Props> = (props) => {
     遠隔巡視開始
     </Button>
 
-    <p></p>
+    <br></br>
     現地の週間天気
     <br></br>
     <img src={SampleImage} alt="sample" />    

@@ -10,7 +10,6 @@ import EntStaff from "./components/pages/EntStaff";
 import ConstInfo from "./components/pages/ConstInfo";
 import RemoteCheckStart from "./components/pages/RemoteCheckStart";
 import RemoteCheckInsert from "./components/pages/RemoteCheckInsert";
-import ProductPage from "./components/pages/ProductPage";
 import HomePage from "./components/pages/HomePage";
 
 const App: React.FC = () => {
@@ -26,7 +25,6 @@ const App: React.FC = () => {
         <Route path="/constInfo" component={ConstInfo} exact />
         <Route path="/remoteCheckStart" component={RemoteCheckStart} exact />
         <Route path="/remoteCheckInsert" component={RemoteCheckInsert} exact />
-        <Route path="/products" component={ProductPage} exact />
         <Route path="/test1" component={HomePage} exact />
       </Switch>
     </Router>

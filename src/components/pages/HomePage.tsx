@@ -1,11 +1,10 @@
 import React from "react";
 import GenericTemplateTop from "../templates/GenericTemplateTop";
 
-import { withRouter, RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 import MaterialTable from 'material-table';
 import Icon from '@material-ui/core/Icon';
-import { pink, teal, orange } from "@material-ui/core/colors";
-
+import { orange } from "@material-ui/core/colors";
 
 type Props = {} & RouteComponentProps<{}>;
 

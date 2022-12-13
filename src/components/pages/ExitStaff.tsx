@@ -1,14 +1,7 @@
 import React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 import MaterialTable from 'material-table';
-import Icon from '@material-ui/core/Icon';
-import { pink, teal, orange } from "@material-ui/core/colors";
 import GenericTemplate from '../templates/GenericTemplate';
-
-import { Typography, TextField, Button, CssBaseline, Container } from '@material-ui/core';
-
-import SampleImage from "../images/weather_1week.png"
-
 
 type Props = {} & RouteComponentProps<{}>;
 
