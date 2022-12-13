@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <Route path="/remoteCheckStart" component={RemoteCheckStart} exact />
         <Route path="/remoteCheckInsert" component={RemoteCheckInsert} exact />
         <Route path="/products" component={ProductPage} exact />
-        <Route path="/" component={HomePage} exact />
+        <Route path="/test1" component={HomePage} exact />
       </Switch>
     </Router>
   );
