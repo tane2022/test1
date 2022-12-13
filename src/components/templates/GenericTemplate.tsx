@@ -26,7 +26,6 @@ import Description from "@material-ui/icons/Description";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Home from "@material-ui/icons/Home";
 import CameraFront from '@material-ui/icons/CameraFront';
 
 
@@ -217,7 +216,7 @@ const GenericTemplate: React.FC<GenericTemplateProps> = ({
           </div>
           <Divider />
           <List>
-            <Link to="/" className={classes.link}>
+            <Link to="/test1" className={classes.link}>
               <ListItem button>
                 <ListItemIcon>
                   <HomeIcon />
