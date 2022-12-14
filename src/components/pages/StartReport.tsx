@@ -10,24 +10,23 @@ const StartReport: React.FC<Props> = (props) => {
     <GenericTemplate title={'作業開始報告'}>
       <MaterialTable
         columns={[
-          { title: '現場側対応者', field: 'itemName', headerStyle: { maxWidth: 0}},
-          { title: '所属会社', field: 'category', headerStyle: { minWidth: 150}},
+          { title: '物件No', field: 'itemName', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '物件名', field: 'category', headerStyle: { minWidth: 175},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
         ]}
         data={[
-          { itemName: '種村　慎也', category: '日本電気株式会社' },
+          { itemName: '1234567890', category: '本間章朗様邸新築工事'},
         ]}
-
         options={{
           showTitle: false,
           headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
-          backgroundColor: "#1565C0", color: "#FFF" },
+            backgroundColor: "#1565C0", color: "#FFF", paddingTop: 3, paddingBottom: 3, },
           paging: false,
           maxBodyHeight: 300,
           search: false,
           searchFieldVariant: "standard",
           toolbar: false
-/*          searchFieldAlignment: 'left',
-*/
         }}
       />
       <br></br>

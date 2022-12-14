@@ -13,16 +13,6 @@ type Props = {} & RouteComponentProps<{}>;
 
 const RemoteCheckInsert: React.FC<Props> = (props) => {
 
-  const [spacing, setSpacing] = React.useState(2);
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSpacing(Number((event.target as HTMLInputElement).value));
-  };
-
-  const jsx = `
-  <Grid container spacing={${spacing}}>
-  `;
-
   const move = () => {
     props.history.push({
       pathname: '/constInfo',
@@ -43,8 +33,10 @@ const RemoteCheckInsert: React.FC<Props> = (props) => {
       遠隔巡視予定
       <MaterialTable
         columns={[
-          { title: '巡視予定日', field: 'itemName', headerStyle: { maxWidth: 120}},
-          { title: '巡視時刻', field: 'category', headerStyle: { minWidth: 150}},
+          { title: '巡視予定日', field: 'itemName', headerStyle: { maxWidth: 120},
+            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
+          { title: '巡視時刻', field: 'category', headerStyle: { minWidth: 150},
+            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
         ]}
         data={[
           { itemName: '2022/12/12', category: '13:00' },
@@ -52,7 +44,7 @@ const RemoteCheckInsert: React.FC<Props> = (props) => {
 
         options={{
           showTitle: false,
-          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0, paddingTop: 3, paddingBottom: 3,
           backgroundColor: "#1565C0", color: "#FFF" },
           paging: false,
           maxBodyHeight: 300,
@@ -64,16 +56,18 @@ const RemoteCheckInsert: React.FC<Props> = (props) => {
 
 <MaterialTable
         columns={[
-          { title: '現場側対応者', field: 'itemName', headerStyle: { maxWidth: 120}},
-          { title: '所属会社', field: 'category', headerStyle: { minWidth: 150}},
+          { title: '現場側対応者', field: 'itemName', headerStyle: { maxWidth: 120},
+          cellStyle: { paddingTop: 3, paddingBottom: 3,}},
+          { title: '所属会社', field: 'category', headerStyle: { minWidth: 150},
+          cellStyle: { paddingTop: 3, paddingBottom: 3,}},
         ]}
         data={[
-          { itemName: '種村　慎也', category: '日本電気株式会社' },
+          { itemName: '種村　慎太郎', category: '日本電気株式会社' },
         ]}
 
         options={{
           showTitle: false,
-          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0, paddingTop: 3, paddingBottom: 3,
           backgroundColor: "#1565C0", color: "#FFF" },
           paging: false,
           maxBodyHeight: 300,
@@ -90,9 +84,8 @@ const RemoteCheckInsert: React.FC<Props> = (props) => {
           variant="contained"
           color="secondary"
           fullWidth
-          onClick={move}
-          
->
+          onClick={move}          
+        >
           登録
         </Button>
 

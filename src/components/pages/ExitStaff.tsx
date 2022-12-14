@@ -11,16 +11,18 @@ const ExitStaff: React.FC<Props> = (props) => {
     <GenericTemplate title={'退場者一覧'}>
       <MaterialTable
         columns={[
-          { title: '物件No', field: 'itemName', headerStyle: { maxWidth: 0}},
-          { title: '物件名', field: 'category', headerStyle: { minWidth: 190}},
+          { title: '物件No', field: 'itemName', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '物件名', field: 'category', headerStyle: { minWidth: 175},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
         ]}
         data={[
-          { itemName: '1234567890', category: '本間章朗様邸　新築工事'},
+          { itemName: '1234567890', category: '本間章朗様邸新築工事'},
         ]}
         options={{
           showTitle: false,
           headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
-          backgroundColor: "#1565C0", color: "#FFF" },
+            backgroundColor: "#1565C0", color: "#FFF", paddingTop: 3, paddingBottom: 3, },
           paging: false,
           maxBodyHeight: 300,
           search: false,
@@ -31,11 +33,16 @@ const ExitStaff: React.FC<Props> = (props) => {
     <p></p>
     <MaterialTable
         columns={[
-          { title: '退場時刻', field: 'inDatetime'},
-          { title: '氏名', field: 'name'},
-          { title: '所属企業', field: 'kigyo' },
-          { title: '立場', field: 'tachiba' , headerStyle: { minWidth: 90}},
-          { title: '開始報告', field: 'kaishi' },
+          { title: '退場時刻', field: 'inDatetime',
+          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '氏名', field: 'name',
+          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '所属企業', field: 'kigyo',
+          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '立場', field: 'tachiba' , headerStyle: { minWidth: 90},
+          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '開始報告', field: 'kaishi',
+          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
         ]}
         data={[
           { inDatetime: '2022/8/1 17:48', kigyo: '日本電気株式会社', name: '種村　次郎', tachiba: '作業員', kaishi: '有'},
@@ -44,7 +51,7 @@ const ExitStaff: React.FC<Props> = (props) => {
         ]}
         options={{
           showTitle: false,
-          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,paddingTop: 3, paddingBottom: 3,
           backgroundColor: "#1565C0", color: "#FFF" },
           paging: true,
           maxBodyHeight: 300,

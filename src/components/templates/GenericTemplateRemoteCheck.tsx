@@ -203,7 +203,7 @@ const GenericTemplate: React.FC<GenericTemplateProps> = ({
           </Toolbar>
         </AppBar>
         <Drawer
-          variant="permanent"
+          variant="temporary"
           classes={{
             paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
           }}
@@ -246,14 +246,6 @@ const GenericTemplate: React.FC<GenericTemplateProps> = ({
                   <CameraFront />
                 </ListItemIcon>
                 <ListItemText primary="遠隔巡視開始" />
-              </ListItem>
-            </Link>
-            <Link to="/checkReportList" className={classes.link}>
-              <ListItem button>
-                <ListItemIcon>
-                  <Description />
-                </ListItemIcon>
-                <ListItemText primary="巡視実施記録一覧" />
               </ListItem>
             </Link>
             <Link to="/infoDeliver" className={classes.link}>
