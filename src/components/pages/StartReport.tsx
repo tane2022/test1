@@ -30,8 +30,67 @@ const StartReport: React.FC<Props> = (props) => {
         }}
       />
       <br></br>
-      <p>工事中</p>
+      <MaterialTable
+        columns={[
+          { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
+          { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+        ]}
+        data={[
+          { firstColumn:'企業名', secondColumn: '日本電気株式会社' },
+          { firstColumn:'氏名', secondColumn: '日電　太郎' },
+          { firstColumn:'報告時刻', secondColumn: '2022/12/15 8:00' },
+          { firstColumn:'作業内容', secondColumn: '内装工事'},
+          { firstColumn:'作業場所', secondColumn: '東京都港区芝五丁目'},
+          { firstColumn:'危険ポイント', secondColumn: '・・・' },
+          { firstColumn:'危険対策', secondColumn: '・・・' },
+          { firstColumn:'始業前点検', secondColumn: '・・・' },
+          { firstColumn:'伝達事項確認', secondColumn: '・・・' },
+        ]}
+        options={{
+          showTitle: false,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+            backgroundColor: "#1565C0", color: "#FFF", paddingTop: 3, paddingBottom: 3, },
+          paging: false,
+          maxBodyHeight: 300,
+          search: false,
+          searchFieldVariant: "standard",
+          toolbar: false,
+          header: false
+        }}
+      />
       <br></br>
+      <MaterialTable
+        columns={[
+          { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
+          { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+        ]}
+        data={[
+          { firstColumn:'企業名', secondColumn: '日本電気株式会社' },
+          { firstColumn:'氏名', secondColumn: '日電　次郎' },
+          { firstColumn:'報告時刻', secondColumn: '2022/12/15 8:15' },
+          { firstColumn:'作業内容', secondColumn: '内装工事'},
+          { firstColumn:'作業場所', secondColumn: '東京都港区芝五丁目'},
+          { firstColumn:'危険ポイント', secondColumn: '・・・' },
+          { firstColumn:'危険対策', secondColumn: '・・・' },
+          { firstColumn:'始業前点検', secondColumn: '・・・' },
+          { firstColumn:'伝達事項確認', secondColumn: '・・・' },
+        ]}
+        options={{
+          showTitle: false,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+            backgroundColor: "#1565C0", color: "#FFF", paddingTop: 3, paddingBottom: 3, },
+          paging: false,
+          maxBodyHeight: 300,
+          search: false,
+          searchFieldVariant: "standard",
+          toolbar: false,
+          header: false
+        }}
+      />
     </GenericTemplate>
   );
 };
