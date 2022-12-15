@@ -3,9 +3,19 @@ import { withRouter, RouteComponentProps } from 'react-router-dom';
 import MaterialTable from 'material-table';
 import GenericTemplate from '../templates/GenericTemplate';
 
+import {Button} from '@material-ui/core';
+
 type Props = {} & RouteComponentProps<{}>;
 
 const InfoDeliver: React.FC<Props> = (props) => {
+
+  const move = () => {
+    props.history.push({
+      pathname: '/ConstInfo',
+      state: { sourcePage: 'HomePage' }
+    });
+  };
+
   return (
     <GenericTemplate title={'伝達登録'}>
       <MaterialTable
@@ -29,9 +39,38 @@ const InfoDeliver: React.FC<Props> = (props) => {
           toolbar: false
         }}
       />
-      <br></br>
-      <p>工事中</p>
-      <br></br>
+      <MaterialTable
+        columns={[
+          { title: '発信先', field: 'itemName', headerStyle: { maxWidth: 120},
+            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
+          { title: '伝達事項', field: 'category', headerStyle: { minWidth: 150},
+            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
+        ]}
+        data={[
+          { itemName: '入場者全員', category: '今日は、雨予報なので戸締りを確実にお願いします。合わせて資材の雨養生も確実にお願いします。' },
+        ]}
+
+        options={{
+          showTitle: false,
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0, paddingTop: 3, paddingBottom: 3,
+          backgroundColor: "#1565C0", color: "#FFF" },
+          paging: false,
+          maxBodyHeight: 300,
+          search: false,
+          searchFieldVariant: "standard",
+          toolbar: false
+        }}
+      />
+
+        <p></p>
+        <Button
+          variant="contained"
+          color="secondary"
+          fullWidth
+          onClick={move} 
+        >
+          登録
+        </Button>
     </GenericTemplate>
   );
 };
