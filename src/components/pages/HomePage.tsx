@@ -6,12 +6,127 @@ import MaterialTable from 'material-table';
 import Icon from '@material-ui/core/Icon';
 import { orange } from "@material-ui/core/colors";
 
+import Box from '@material-ui/core/Box';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import IconButton, { IconButtonProps } from '@material-ui/core/IconButton';
+import HomeWork from "@material-ui/icons/HomeWork";
+
 type Props = {} & RouteComponentProps<{}>;
 
 const HomePage: React.FC<Props> = (props) => {
 
   return (
     <GenericTemplateTop title={'現場一覧'}>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：1234567890<br/>
+          物件名：本間章朗様邸　新築工事<br />
+          入場/退場者数：100/32<br/>
+          進捗遅延報告：無<br />
+          巡視方法(予定)：遠隔<br/>
+          巡視日時(予定)：2022/12/12 13:00
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：2385739799<br/>
+          物件名：山本賢司様邸　新築工事<br />
+          入場/退場者数：400/380<br/>
+          進捗遅延報告：無<br />
+          巡視方法(予定)：未設定<br/>
+          巡視日時(予定)：
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：1234567890<br/>
+          物件名：本間章朗様邸　新築工事<br />
+          入場/退場者数：100/32<br/>
+          進捗遅延報告：無<br />
+          巡視方法(予定)：遠隔<br/>
+          巡視日時(予定)：2022/12/12 13:00
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：9237597978<br/>
+          物件名：笹田幸恵様邸　新築工事<br />
+          入場/退場者数：500/346<br/>
+          進捗遅延報告：有<br />
+          巡視方法(予定)：現地<br/>
+          巡視日時(予定)：2022/12/13 8:00
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：2134897851<br/>
+          物件名：日野哲様邸　新築工事<br />
+          入場/退場者数：200/200<br/>
+          進捗遅延報告：無<br />
+          巡視方法(予定)：未設定<br/>
+          巡視日時(予定)：
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：3339845612<br/>
+          物件名：渡邊亮磨様邸　新築工事<br />
+          入場/退場者数：250/89<br/>
+          進捗遅延報告：有<br />
+          巡視方法(予定)：現地<br/>
+          巡視日時(予定)：2022/12/14 9:30
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card >
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+        <HomeWork />
+        </IconButton>
+        <Typography variant="body2">
+          物件No：2395794596<br/>
+          物件名：澤出浩一様邸　新築工事<br />
+          入場/退場者数：250/100<br/>
+          進捗遅延報告：無<br />
+          巡視方法(予定)：未設定<br/>
+          巡視日時(予定)：
+        </Typography>
+      </CardActions>
+    </Card>
+
       <MaterialTable
         columns={[
           { title: '物件No', field: 'itemName', headerStyle: { minWidth: 0}, defaultSort: 'asc', cellStyle: { paddingTop: 3, paddingBottom: 3, }},
