@@ -36,7 +36,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -52,7 +52,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -68,7 +68,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -84,7 +84,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -100,7 +100,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -116,7 +116,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
     <Card >
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -132,7 +132,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
-    <p/>
+    <br/>
 
       <MaterialTable
         columns={[
