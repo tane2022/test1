@@ -41,10 +41,10 @@ const InfoDeliver: React.FC<Props> = (props) => {
       />
       <MaterialTable
         columns={[
-          { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
+          { title: '１列目', field: 'firstColumn', 
             cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
-          { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
-            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '２列目', field: 'secondColumn',
+            cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 190}},
         ]}
         data={[
           { firstColumn:'発信先', secondColumn: '入場者全員' },

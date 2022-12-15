@@ -36,7 +36,7 @@ const ExitStaff: React.FC<Props> = (props) => {
           { title: '退場時刻', field: 'inDatetime',
           cellStyle: { paddingTop: 3, paddingBottom: 3, }},
           { title: '氏名', field: 'name',
-          cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          cellStyle: { paddingTop: 3, paddingBottom: 3,minWidth: 110}},
           { title: '所属企業', field: 'kigyo',
           cellStyle: { paddingTop: 3, paddingBottom: 3, }},
           { title: '立場', field: 'tachiba' , headerStyle: { minWidth: 90},

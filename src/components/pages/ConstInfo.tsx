@@ -88,9 +88,12 @@ const ConstInfo: React.FC<Props> = (props) => {
     本日の入退状況
     <MaterialTable
         columns={[
-          { title: '氏名', field: 'name', headerStyle: { maxWidth: 0}, cellStyle: { paddingTop: 3, paddingBottom: 3, }},
-          { title: '入場時刻', field: 'inDatetime', headerStyle: { maxWidth: 0}, cellStyle: { paddingTop: 3, paddingBottom: 3, }},
-          { title: '退場時刻', field: 'outDatetime', headerStyle: { maxWidth: 0}, cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+          { title: '氏名', field: 'name', headerStyle: { maxWidth: 75 },
+            cellStyle: { paddingTop: 3, paddingBottom: 3, maxWidth: 75 }},
+          { title: '入場時刻', field: 'inDatetime', headerStyle: { maxWidth: 100 },
+            cellStyle: { paddingTop: 3, paddingBottom: 3,maxWidth: 0 }},
+          { title: '退場時刻', field: 'outDatetime', headerStyle: { maxWidth: 100 },
+            cellStyle: { paddingTop: 3, paddingBottom: 3, maxWidth: 0 }},
         ]}
         data={[
           { name: '日本　太郎', inDatetime: '2022/8/1 05:45', outDatetime: '2022/8/1 13:18'},

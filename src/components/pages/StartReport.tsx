@@ -35,7 +35,7 @@ const StartReport: React.FC<Props> = (props) => {
           { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
             cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
           { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
-            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 160}},
         ]}
         data={[
           { firstColumn:'企業名', secondColumn: '日本電気株式会社' },
@@ -66,7 +66,7 @@ const StartReport: React.FC<Props> = (props) => {
           { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
             cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
           { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
-            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 160}},
         ]}
         data={[
           { firstColumn:'企業名', secondColumn: '日本電気株式会社' },

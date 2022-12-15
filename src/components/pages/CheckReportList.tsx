@@ -38,9 +38,9 @@ const CheckReportList: React.FC<Props> = (props) => {
           { title: '巡視方法', field: 'name', headerStyle: { maxWidth: 80},
             cellStyle: { paddingTop: 3, paddingBottom: 3, }},
           { title: '巡視者', field: 'kigyo', headerStyle: { maxWidth: 80},
-            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+            cellStyle: { paddingTop: 3, paddingBottom: 3,minWidth: 120}},
           { title: '現場担当者', field: 'tachiba' , headerStyle: { maxWidth: 100},
-            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 110}},
           { title: '指摘有無', field: 'kaishi', headerStyle: { maxWidth: 80},
             cellStyle: { paddingTop: 3, paddingBottom: 3, }},
         ]}
