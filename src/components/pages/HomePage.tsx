@@ -21,7 +21,7 @@ const HomePage: React.FC<Props> = (props) => {
 
   return (
     <GenericTemplateTop title={'現場一覧'}>
-    <Card>
+    <Card color = 'inherit'>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
           <HomeWork />
@@ -36,6 +36,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -51,6 +52,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -66,6 +68,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -81,6 +84,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -96,6 +100,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -111,6 +116,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
     <Card >
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -126,6 +132,7 @@ const HomePage: React.FC<Props> = (props) => {
         </Typography>
       </CardActions>
     </Card>
+    <p/>
 
       <MaterialTable
         columns={[
