@@ -41,24 +41,25 @@ const InfoDeliver: React.FC<Props> = (props) => {
       />
       <MaterialTable
         columns={[
-          { title: '発信先', field: 'itemName', headerStyle: { maxWidth: 120},
-            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
-          { title: '伝達事項', field: 'category', headerStyle: { minWidth: 150},
-            cellStyle: { paddingTop: 3, paddingBottom: 3,}},
+          { title: '１列目', field: 'firstColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, backgroundColor: "#1565C0", color: "#FFF", }},
+          { title: '２列目', field: 'secondColumn', headerStyle: { maxWidth: 0},
+            cellStyle: { paddingTop: 3, paddingBottom: 3, }},
         ]}
         data={[
-          { itemName: '入場者全員', category: '今日は、雨予報なので戸締りを確実にお願いします。合わせて資材の雨養生も確実にお願いします。' },
+          { firstColumn:'発信先', secondColumn: '入場者全員' },
+          { firstColumn:'伝達事項', secondColumn: '今日は、雨予報なので戸締りを確実にお願いします。合わせて資材の雨養生も確実にお願いします。' },
         ]}
-
         options={{
           showTitle: false,
-          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0, paddingTop: 3, paddingBottom: 3,
-          backgroundColor: "#1565C0", color: "#FFF" },
+          headerStyle: { whiteSpace: 'nowrap' ,position: 'sticky', top: 0,
+            backgroundColor: "#1565C0", color: "#FFF", paddingTop: 3, paddingBottom: 3, },
           paging: false,
           maxBodyHeight: 300,
           search: false,
           searchFieldVariant: "standard",
-          toolbar: false
+          toolbar: false,
+          header: false
         }}
       />
 
