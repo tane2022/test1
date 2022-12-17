@@ -6,13 +6,10 @@ import MaterialTable from 'material-table';
 import Icon from '@material-ui/core/Icon';
 import { orange } from "@material-ui/core/colors";
 
-import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import IconButton, { IconButtonProps } from '@material-ui/core/IconButton';
+import IconButton from '@material-ui/core/IconButton';
 import HomeWork from "@material-ui/icons/HomeWork";
 
 type Props = {} & RouteComponentProps<{}>;
@@ -23,7 +20,7 @@ const HomePage: React.FC<Props> = (props) => {
     <GenericTemplateTop title={'現場一覧'}>
     <Card color = 'inherit'>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
           <HomeWork />
         </IconButton>
         <Typography variant="body2">
@@ -39,7 +36,7 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
         <HomeWork />
         </IconButton>
         <Typography variant="body2">
@@ -55,23 +52,7 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-        <HomeWork />
-        </IconButton>
-        <Typography variant="body2">
-          物件No：1234567890<br/>
-          物件名：本間章朗様邸　新築工事<br />
-          入場/退場者数：100/32<br/>
-          進捗遅延報告：無<br />
-          巡視方法(予定)：遠隔<br/>
-          巡視日時(予定)：2022/12/12 13:00
-        </Typography>
-      </CardActions>
-    </Card>
-    <br/>
-    <Card>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
         <HomeWork />
         </IconButton>
         <Typography variant="body2">
@@ -87,7 +68,7 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
         <HomeWork />
         </IconButton>
         <Typography variant="body2">
@@ -103,7 +84,7 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
         <HomeWork />
         </IconButton>
         <Typography variant="body2">
@@ -119,7 +100,7 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card >
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" href={"/constInfo"}>
         <HomeWork />
         </IconButton>
         <Typography variant="body2">

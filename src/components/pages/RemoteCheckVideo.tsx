@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-import MaterialTable from 'material-table';
 import GenericTemplateRemoteCheck from '../templates/GenericTemplateRemoteCheck';
 
 import { Button } from '@material-ui/core';
