@@ -20,14 +20,21 @@ const HomePage: React.FC<Props> = (props) => {
     <GenericTemplateTop title={'現場一覧'}>
     <Card color = 'inherit'>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-          <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+          <HomeWork color="secondary" />
         </IconButton>
         <Typography variant="body2">
           物件No：1234567890<br/>
           物件名：本間章朗様邸　新築工事<br />
           入場/退場者数：100/32<br/>
-          進捗遅延報告：無<br />
+          進捗遅延報告：有<br />
           巡視方法(予定)：遠隔<br/>
           巡視日時(予定)：2022/12/12 13:00
         </Typography>
@@ -36,8 +43,15 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-        <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+        <HomeWork color="primary" />
         </IconButton>
         <Typography variant="body2">
           物件No：2385739799<br/>
@@ -52,14 +66,21 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-        <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+        <HomeWork  color="primary" />
         </IconButton>
         <Typography variant="body2">
           物件No：9237597978<br/>
           物件名：笹田幸恵様邸　新築工事<br />
           入場/退場者数：500/346<br/>
-          進捗遅延報告：有<br />
+          進捗遅延報告：無<br />
           巡視方法(予定)：現地<br/>
           巡視日時(予定)：2022/12/13 8:00
         </Typography>
@@ -68,8 +89,15 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-        <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+        <HomeWork color="primary" />
         </IconButton>
         <Typography variant="body2">
           物件No：2134897851<br/>
@@ -84,8 +112,15 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-        <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+        <HomeWork  color="secondary" />
         </IconButton>
         <Typography variant="body2">
           物件No：3339845612<br/>
@@ -100,8 +135,15 @@ const HomePage: React.FC<Props> = (props) => {
     <br/>
     <Card >
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" href={"/constInfo"}>
-        <HomeWork />
+        <IconButton aria-label="add to favorites"
+          onClick={() => {
+            props.history.push({
+              pathname: '/constInfo',
+              state: { sourcePage: 'HomePage' }
+            });
+          }}
+        >
+        <HomeWork  color="primary" />
         </IconButton>
         <Typography variant="body2">
           物件No：2395794596<br/>
