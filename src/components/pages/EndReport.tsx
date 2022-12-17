@@ -39,10 +39,10 @@ const EndReport: React.FC<Props> = (props) => {
             cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 160}},
         ]}
         data={[
-          { firstColumn:'企業名', secondColumn: '日本電気株式会社' },
-          { firstColumn:'氏名', secondColumn: '日電　太郎' },
+          { firstColumn:'企業名', secondColumn: '株式会社外装組' },
+          { firstColumn:'氏名', secondColumn: '外装　太郎' },
           { firstColumn:'報告時刻', secondColumn: '2022/12/15 18:00' },
-          { firstColumn:'作業内容', secondColumn: '内装工事'},
+          { firstColumn:'作業内容', secondColumn: '外装工事'},
           { firstColumn:'作業場所', secondColumn: '東京都港区芝五丁目'},
           { firstColumn:'危険ポイント', secondColumn: '・・・' },
           { firstColumn:'危険対策', secondColumn: '・・・' },
@@ -70,8 +70,8 @@ const EndReport: React.FC<Props> = (props) => {
             cellStyle: { paddingTop: 3, paddingBottom: 3, minWidth: 160}},
         ]}
         data={[
-          { firstColumn:'企業名', secondColumn: '日本電気株式会社' },
-          { firstColumn:'氏名', secondColumn: '日電　次郎' },
+          { firstColumn:'企業名', secondColumn: '内装工務店株式会社' },
+          { firstColumn:'氏名', secondColumn: '内装　次郎' },
           { firstColumn:'報告時刻', secondColumn: '2022/12/15 17:45' },
           { firstColumn:'作業内容', secondColumn: '内装工事'},
           { firstColumn:'作業場所', secondColumn: '東京都港区芝五丁目'},
